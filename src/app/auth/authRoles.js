@@ -1,0 +1,45 @@
+/**
+ * Authorization Roles
+ */
+const authRoles = {
+  //admin: ['admin', 'superadmin'],
+  //staff: ['admin', 'staff'],
+  // user: ['admin', 'staff', 'user'],
+  //onlyGuest: [],
+  estadistica: ["appsf", "dashboards", "logout", "divider-1"],
+  contenido: [
+    "appsf",
+    "dashboards",
+    "uploads",
+    "appsclien",
+    "competenciaReports",
+    "appsc",
+    "sliders",
+    "notifications",
+    "redentions",
+    "News",
+    "misions",
+    "bonus",
+    "bonusesQuestion",
+    "imperdibles",
+    "tricampeons",
+    "prizes",
+    "points",
+    "canjes",
+    "stocks",
+    "bingos-image",
+    "logout",
+    "appsco",
+    "promo",
+    "coupons",
+    "slidersConsumers",
+    "consumer-notifications",
+    "divider-1",
+  ],
+  datos: ["appsf", "uploads", "dashboards", "logout", "divider-1"],
+  usuario: ["appsf", "clientsMetrics", "competenciaReports", "prizes", "points", "stocks", "logout", "divider-1"],
+  carga_datos: ["appsf", "uploads", "logout", "divider-1"],
+  test: ["logout", "config", "divider-1"],
+};
+
+export default authRoles;

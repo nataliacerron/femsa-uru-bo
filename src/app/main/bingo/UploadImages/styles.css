@@ -1,0 +1,59 @@
+.imgUpload{
+    width: 70% !important;
+    object-fit: scale-down !important;
+}
+
+.buttonImg{
+   color: black;
+}
+
+.contenedor-imagen {
+    position: relative;
+    display: inline-flex;
+  }
+  
+  .contenedor-imagen img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color del overlay */
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contenedor-imagen:hover .overlay {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .overlay input {
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: white;
+    color: black;
+  }
+  
+  .overlay button {
+    padding: 5px 5px; /* Ajusta el padding según tus necesidades */
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: #333; /* Color del texto del botón */
+    font-size: 16px; /* Tamaño de la fuente del botón */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .overlay button:hover {
+    background-color: #ccc; /* Cambia el color al pasar el mouse */
+  }
