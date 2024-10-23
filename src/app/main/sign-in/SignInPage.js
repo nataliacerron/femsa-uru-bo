@@ -62,26 +62,9 @@ function SignInPage() {
       id: "usuario.prueba",
       first_name: "Usuario",
       last_name: "Prueba",
-      profile: "contenido",
-      role: ["contenido"], // O el perfil que necesites para tus redirecciones
+      profile: "test",
+      role: ["test"], // O el perfil que necesites para tus redirecciones
     };
-    /**
-     * userDatos
-    "id": "jose.bozzone",
-    "first_name": "Jose",
-    "last_name": "Bozzone",
-    "profile": "admin",
-    "enabled": true,
-    "role": [
-        "admin"
-    ],
-    "data": {
-        "displayName": "Jose Bozzone",
-        "photo_url": "https://firebasestorage.googleapis.com/v0/b/femsa-arg.appspot.com/o/users%2Fjose.bozzone.png?alt=media&token=92fe6687-70ee-4373-9f40-d294bf6bd0fe"
-    },
-    "photo_url": "https://firebasestorage.googleapis.com/v0/b/femsa-arg.appspot.com/o/users%2Fjose.bozzone.png?alt=media&token=92fe6687-70ee-4373-9f40-d294bf6bd0fe"
-}
-     */
 
     // Guardar los datos en localStorage (simulando una respuesta de login exitosa)
     const encryptedObject = AES.encrypt(JSON.stringify(fakePayload), "MYKEY91/");

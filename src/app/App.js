@@ -26,6 +26,7 @@ import { authRoles } from "./auth";
 import { useDeepCompareEffect } from "@fuse/hooks";
 
 import { Navigate } from "react-router-dom";
+import { fil } from "date-fns/locale";
 
 const emotionCacheOptions = {
   rtl: {
@@ -97,6 +98,7 @@ const App = () => {
         console.log(user.profile, "user profile");
         dispatch(setNavigation([]));
         const filteredMenu = filterMenuByRole(nav, authRoles[user.profile]);
+        console.log(filteredMenu, "filteredMenu");
         dispatch(setNavigation(filteredMenu));
       }
     }

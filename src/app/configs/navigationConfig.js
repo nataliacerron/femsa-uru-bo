@@ -94,6 +94,15 @@ const navigationConfig = [
         end: true,
       },
       {
+        id: "promo",
+        title: "Promociones",
+        //    translate: "notifications",
+        type: "item",
+        icon: "material-outline:add_shopping_cart",
+        url: "promotions",
+        end: true,
+      },
+      {
         id: "notifications",
         title: "Notificaciones",
         //    translate: "notifications",
@@ -250,7 +259,7 @@ const navigationConfig = [
         icon: "heroicons-outline:speakerphone",
         url: "consumersnotifications",
       },*/
-      {
+      /*  {
         id: "promo",
         title: "Promociones",
         //    translate: "notifications",
@@ -258,7 +267,7 @@ const navigationConfig = [
         icon: "material-outline:add_shopping_cart",
         url: "promotions",
         end: true,
-      },
+      }, */
       {
         id: "coupons",
         title: "Cupones",

@@ -39,7 +39,7 @@ const authRoles = {
   datos: ["appsf", "uploads", "dashboards", "logout", "divider-1"],
   usuario: ["appsf", "clientsMetrics", "competenciaReports", "prizes", "points", "stocks", "logout", "divider-1"],
   carga_datos: ["appsf", "uploads", "logout", "divider-1"],
-  test: ["logout", "config", "divider-1"],
+  test: ["appsc", "promo", "notifications", "config", "logout", "divider-1"],
 };
 
 export default authRoles;
