@@ -76,12 +76,10 @@ function SignInPage() {
     // Simular un retraso antes de redirigir
     setTimeout(() => {
       console.log(fakePayload);
-      if (fakePayload.profile === "usuario" || fakePayload.profile === "carga_datos") {
-        navigate("/");
-      } else if (fakePayload.profile === "contenido") {
-        navigate("/competenciaReports");
+      if (fakePayload.profile === "test") {
+        navigate("/promotions");
       } else {
-        navigate("/dashboards");
+        navigate("/");
       }
       setLoading(false);
     }, 1000);
