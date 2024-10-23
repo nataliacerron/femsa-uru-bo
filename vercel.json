@@ -4,10 +4,6 @@
         "path": "/api/sendMails",
         "schedule": "0 13 * * *"
       }
-    ], 
-    "build": {
-    "env": {
-      "NODE_VERSION": "16.x"
-    }
-  }
+    ]
+  
   }
