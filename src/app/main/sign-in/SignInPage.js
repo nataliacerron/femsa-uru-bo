@@ -62,8 +62,8 @@ function SignInPage() {
       id: "usuario.prueba",
       first_name: "Usuario",
       last_name: "Prueba",
-      profile: "test",
-      role: ["test"], // O el perfil que necesites para tus redirecciones
+      profile: "contenido",
+      role: ["contenido"], // O el perfil que necesites para tus redirecciones
     };
     /**
      * userDatos
