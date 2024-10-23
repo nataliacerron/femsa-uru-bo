@@ -42,7 +42,6 @@ function UserNavbarHeader(props) {
 
   }, []);*/
 
-  console.log("userDatos", userDatos);
   return (
     <Root className="user relative flex flex-col items-center justify-center p-16 pb-14 shadow-0">
       <div className="flex items-center justify-center mb-24">

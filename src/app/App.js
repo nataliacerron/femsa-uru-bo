@@ -77,7 +77,7 @@ const App = () => {
       });
     }
 
-    if (user) {
+    /* if (user) {
       if (
         user.profile === "usuario" ||
         user.profile === "datos" ||
@@ -86,6 +86,15 @@ const App = () => {
         user.profile === "carga_datos" ||
         user.profile === "test"
       ) {
+        dispatch(setNavigation([]));
+        const filteredMenu = filterMenuByRole(nav, authRoles[user.profile]);
+        dispatch(setNavigation(filteredMenu));
+      }
+    } */
+    if (user) {
+      // Verificar si el perfil del usuario está dentro de las claves de authRoles
+      if (Object.keys(authRoles).includes(user.profile)) {
+        console.log(user.profile, "user profile");
         dispatch(setNavigation([]));
         const filteredMenu = filterMenuByRole(nav, authRoles[user.profile]);
         dispatch(setNavigation(filteredMenu));
