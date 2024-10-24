@@ -1,8 +1,4 @@
-{ "build": {
-    "env": {
-      "NODE_VERSION": "16.x"
-    }
-  },
+{
     "crons": [
       {
         "path": "/api/sendMails",
