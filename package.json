@@ -2,10 +2,7 @@
     "name": "fuse-react-app",
     "version": "8.0.0",
     "private": true,
-    
-  "type": "module",
-
-
+    "type": "module",
     "dependencies": {
         "@emotion/cache": "11.13.1",
         "@emotion/react": "11.13.3",
@@ -79,7 +76,8 @@
     "resolutions": {
         "react": "18.1.0",
         "react-dom": "18.1.0",
-        "babel-loader": "8.1.0"
+        "babel-loader": "8.1.0",
+         "strip-ansi": "6.0.0"
     },
     "devDependencies": {
         "@babel/core": "7.25.9",
@@ -121,8 +119,8 @@
         "crypto": false
     },
     "scripts": {
-        "start": "NODE_OPTIONS=--openssl-legacy-provider react-app-rewired  start",
-        "build": "NODE_OPTIONS=--openssl-legacy-provider cross-env GENERATE_SOURCEMAP=false react-app-rewired build",
+        "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
+        "build": "NODE_OPTIONS=--openssl-legacy-provider cross-env GENERATE_SOURCEMAP=false react-scripts build",
         "test": "react-app-rewired test --env=node",
         "eject": "react-app-rewired eject",
         "build-docs": "babel-node --presets @babel/preset-env src/app/main/documentation/material-ui-components/build.js",
